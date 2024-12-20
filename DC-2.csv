@@ -1,0 +1,251 @@
+Month,Project Name,Deliverables,Work Start Date,Scheduled Delivery Date,Actual Delivery Date,On-Time Delivery,Delay Duration,Reason for Delay,Delivery Owner,Remarks
+November,SHPY,Added all product & details,11/7/2024,11/12/2024,11/12/2024,Yes,0,N/A,Rajvi Detroja,
+November,SHPY,Siblings and video slider updated,11/15/2024,11/18/2024,11/18/2024,Yes,0,N/A,Rajvi Detroja,
+November,CSRC,Itsafe production push to brazil platfrom,10/14/2024,11/7/2024,11/7/2024,Yes,0,-,Rushil Koyani,-
+November,CSRC,New Text Changes for English platform,11/5/2024,11/5/2024,10/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1007] Make site key dynamic in entire platform,11/6/2024,11/6/2024,11/6/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1010] Do text changes for each file in platform,11/7/2024,11/7/2024,11/7/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1011] Fix issue of english platform,11/7/2024,11/8/2024,11/8/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-994] Create a new migration script to migrate the payment collection to overall purchase history,11/4/2024,11/5/2024,11/5/2024,Yes,0,-,Jahanvi Khakhar,
+November,CSRC,"[CS-992] Study Br_payments model and user_purchase_history and user_paymet_histories collection, changes in overall purchase history",10/29/2024,11/5/2024,11/5/2024,Yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1000] Production setup for the new itsafe brazil platform,11/4/2024,11/5/2024,11/5/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1009] Translation of English platform - remove Hebrew texts wherever required,11/6/2024,11/7/2024,11/7/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1028] Check the webhooks of Vdo-Cipher and update the code if required to update,11/18/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,"[CS-1039] API to update the status of the course from various states except ""IN_PROGRESS""",11/20/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1026] API to extract the day zip and add the videos in db and Vdo-Cipher as well along with the recursion to check if there are any other days present in the AWS S3,11/18/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1023] Upload the course documents API to the AWS S3 course permanent folder,11/12/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1018] Changes in Existing Schema:,11/12/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1019] The migration script to add the status for days in existing course days.,11/12/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1021] Create a course with basic details in database API:,11/12/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1053] Create a day with basic details,11/13/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1024] API to generate a pre-signed URL for uploading the course zip/day zip,11/14/2024,11/22/2024,11/18/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1082] Create a api for upload temporary file,11/21/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1025] API to extract the course zip from AWS S3 and create respective details of the course in the database and also Vdo Cipher:,11/15/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,"[CS-1033] API to delete the complete day from the database, Vdo-Cipher, and AWS S3:",11/20/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,"
+[CS-1034] API to delete the course ( from dev and prod if required )",11/22/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1035] API to move course to production ( check if any changes are required ):,11/21/2024,11/22/2024,11/22/2024,yes,0,-,Jahanvi Khakhar,
+November,CSRC,[CS-1092] Migration for lab to update fields of lab for dynamic lab feature,11/26/2024,11/30/2024,11/26/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1098] Migration for makat module to update makat fields,11/26/2024,11/30/2024,11/26/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1091] Migration for lab module to create new lab technologies and also update create lab script if required,11/26/2024,11/30/2024,11/26/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1088] Migration for course module to update makat data in db,11/25/2024,11/30/2024,11/26/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1084] Bifurcations of Migrations Brazil ( Phase 2 ) and update scripts folder,11/25/2024,11/30/2024,11/26/2024,yes,-4,-,Jahanvi Khakhar,
+November,CSRC,[CS-1003] Write CD pipeline for brazil deployments,11/5/2024,11/5/2024,11/5/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1012] Resolve course upload issue in Brazil dev,11/7/2024,11/7/2024,11/7/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-976] Create a new web lab from the new lab feature,10/28/2024,11/7/2024,11/7/2024,yes,0,-,Kshitij Antani,
+November,CSRC,Production Update,11/7/2024,11/7/2024,11/7/2024,yes,0,-,Kshitij Antani,
+November,CSRC,Brazil Platform Testing and jot down test cases,11/6/2024,11/7/2024,11/7/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[PICI-486] Changes in New 'Web Course' Lab (Settings),11/11/2024,11/19/2024,11/19/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1031] API to delete course video / attached lab / attached exam or other materials of course:,11/26/2024,11/26/2024,11/26/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1027] API to add  videos in the respective day ( day Id received from FE ) directly in the Vdo Cipher and also map them in the database,11/19/2024,11/25/2024,11/22/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1030] API to edit course video / attached lab /attached exam or other materials of the course,11/22/2024,11/26/2024,11/22/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1060] Create a list of resources and costs for the aws,11/13/2024,11/14/2024,11/14/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1105] Merge Build lab and Run lab script to a single script,11/27/2024,11/28/2024,11/28/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1106] Implement Healthcheck route for lab script,11/27/2024,11/28/2024,11/28/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1131] BE - Refactor code for start and stop lab request data to lab server socket,12/4/2024,12/5/2024,12/5/2024,yes,0,-,Kshitij Antani,
+November,CSRC,[CS-1005] Fix english platform issues,11/5/2024,11/7/2024,11/7/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1061] Remove discount from website,11/14/2024,11/14/2024,11/14/2024,Yes,0,-,"Vishad Lunagariya, Rushil Koyani",-
+November,CSRC,[CS-1050] Bind API for Extract Zip File,11/18/2024,11/22/2024,11/22/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1044] Bind API for Create Day,11/13/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1080] Bind API for edit course basic details,11/20/2024,11/22/2024,11/22/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1022] Bind API for create course with basic details,11/12/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[cs-1051] Bind API for Upload Zip File,11/18/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1052] Modify Upload Document API,11/13/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1040] Create Design for Upload Zip File Modal,11/13/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1041] Bind API for Get Pre-signed URL,11/18/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1017] Create the tabbed wise design of the create course form,11/11/2024,11/18/2024,11/18/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1074] Exam Management Migration - English platform,11/29/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1075] Survey Management Migration - English platform,12/2/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1076] Practitioner Module Migration - English platform,12/2/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1077] Feedback Module Migration - English platform,12/3/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1078] Notification Management Migration - English platform,12/3/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1116] Email Template text changes,12/3/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1129] Migration of Pending Files,12/4/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1130] Lab Module Migration,12/5/2024,12/5/2024,12/5/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1073] Course Management Migration - English platform,11/28/2024,11/29/2024,11/29/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1071] Career Path Migration - English platform,11/25/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1072] Management Panel Migration - English platform,11/25/2024,11/29/2024,11/29/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1068] Exams Migration - English Platform,11/21/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1067] Courses Migration - English Platform,11/21/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1070] User Profile Migration - English Platform,11/22/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1069] Labs Migration - English Platform,11/22/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1064] Dashboard Migration - English Platform,11/19/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1065] Zoom feature Migration - English Platform,11/21/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1066] Interview Migration - English Platform,11/21/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,[CS-1063] Authorization Module Migration - English Platform,11/15/2024,11/27/2024,11/27/2024,Yes,0,-,Vishad Lunagariya,-
+November,CSRC,production update and resource creation,11/8/2024,11/8/2024,11/8/2024,Yes,0,-,Rushil Koyani,-
+November,CSRC,Fix the issue of course upload max size limit,11/8/2024,11/8/2024,11/8/2024,Yes,0,-,Rushil Koyani,-
+November,CSRC,[CS-1036] API to shuffle and maintain the video name and also the sequence,11/19/2024,11/21/2024,11/21/2024,Yes,0,-,Rushil Koyani,-
+November,CSRC,Check the issue of video not uploading in videocipher,11/22/2024,11/22/2024,11/22/2024,Yes,0,-,Rushil Koyani,--
+November,CSRC,Create a new deployment for crisis-management-backend in dev server,11/22/2024,11/22/2024,11/22/2024,Yes,0,-,Rushil Koyani,-
+November,SHPY,Blog page creation,11/7/2024,11/11/2024,11/11/2024,Yes,0,N/A,Darshan Sidhhpara,
+November,SHPY,SEO schema updation,11/12/2024,11/12/2024,11/12/2024,Yes,0,N/A,Srujan Rajpura,
+November,SHPY,mobile speed optimization,11/15/2024,11/15/2024,11/15/2024,Yes,0,N/A,Srujan Rajpura,
+November,SHPY,Author bio page created,11/26/2024,11/26/2024,11/26/2024,Yes,0,N/A,Darshan Sidhhpara,
+November,FLTB,[AC-3524] TOW file is downloadable in V2 even though it is a government document,11/4/2024,11/4/2024,11/4/2024,Yes,0,N/A,Dhruva Pambhar,
+November,FLTB,Push document towards Admin pulse,11/6/2024,11/6/2024,11/6/2024,Yes,0,N/A,Sagar Dhanwani,
+November,FLTB,Amlcare to accounton Migration TA document,11/5/2024,11/8/2024,11/8/2024,Yes,0,N/A,Sagar Dhanwani,
+November,FLTB,Excel export for multiple firms in Amlcare,11/8/2024,11/8/2024,11/8/2024,Yes,0,N/A,Sagar Dhanwani,
+November,FLTB,Remove duplicate minfin files migration,11/5/2024,11/8/2024,11/8/2024,Yes,0,N/A,Sagar Dhanwani,
+November,FLTB,[AC-3493] BE - Filter on MyMinfin documents of companies,10/30/2024,10/30/2024,10/30/2024,Yes,0,N/A,Devansh Kaneriya,
+November,FLTB,[AC-3497] BE - AOS - Feedback | 14. MyMinfin companies: document date,10/28/2024,10/30/2024,10/30/2024,Yes,0,N/A,Devansh Kaneriya,
+November,FLTB,[AC-3499] AOS - Feedback | 15. MyMinfin companies: Tax Assessment notice,11/7/2024,11/8/2024,11/8/2024,Yes,0,N/A,Devansh Kaneriya,
+November,FLTB,[AC-3489] update minfin server configurations,10/28/2024,10/30/2024,10/30/2024,Yes,0,N/A,Vishal Parmar,
+November,FLTB,[AC-3460] Improve minfin sync receiving files functionality in backend nest side,11/4/2024,11/8/2024,11/8/2024,Yes,0,N/A,Vishal Parmar,
+November,FLTB,[AC-3459] Improve minfin sync receiving files functionality in worker side,11/4/2024,11/8/2024,11/8/2024,Yes,0,N/A,Vishal Parmar,
+November,FLTB,AC-3491-Changes in Minfin-Master for individual-comapny-sync ,11/28/2024,11/4/2014,11/4/2014,Yes,0,N/A,Nidhi Kathrotiya,
+November,FLTB,AC-3507-Changes in Backend-Nest for individual-comapny-sync,11/4/2024,11/6/2024,11/6/2024,Yes,0,N/A,Nidhi Kathrotiya,
+November,FLTB,AC-3492 - Changes in Minfin-Worker for individual-comapny-sync,11/6/2024,11/8/2024,11/8/2024,Yes,0,N/A,Nidhi Kathrotiya,
+November,FLTB,[AC-3511] AOS Feedback | 9. Customer detail: Customer picture should not show if not available,11/6/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3510] AOS Feedback | 8. Communication at a customer,11/5/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3512] AOS Feedback | 10. Customer overview: Swap customer picture with customer type icon,11/7/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3508] AOS Feedback | 6. Task: Request file & 7. Kamigo translation is missing,11/5/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3504] support new responsible field in PTI excel import,11/8/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3506] AOS Feedback | 3. AOS: country field when adding a company customer,11/4/2024,11/6/2024,11/6/2024,Yes,0,N/A,Megha Rana,
+November,FLTB,[AC-3500] AOS - Feedback | 16. MyMinfin companies: missing document,10/30/2024,11/8/2024,11/8/2024,Yes,0,N/A,Arjun Parmar,
+November,FLTB,[AC-3509] Check priority and failed queue,10/28/2024,11/8/2024,11/8/2024,Yes,0,N/A,Arjun Parmar,
+November,FLTB,[AC-3503] Customer not invited to kamigo when creating customer from questionnaire tab,11/8/2024,11/8/2024,11/8/2024,Yes,0,N/A,Ronak Jagani,
+November,FLTB,[AC-3488] PTI assign questionnaire and send mail issue,10/28/2024,10/28/2024,10/28/2024,Yes,0,N/A,Ronak Jagani,
+November,FLTB,[AC-3498] AOS feedback 1. Team link - error of document icon,10/28/2024,10/28/2024,10/28/2024,Yes,0,N/A,Ronak Jagani,
+November,FLTB,[AC-3502] AOS Feedback 5. Language of Kamigo account is English even if the customer is Dutch,10/29/2024,10/29/2024,10/29/2024,Yes,0,N/A,Ronak Jagani,
+November,FLTB,I-ACCESS - Deployment,10/30/2024,10/30/2024,10/30/2024,Yes,0,N/A,Ashish Chandpa,
+November,FLTB,Reduce Server Configurations,11/6/2024,11/6/2024,11/6/2024,Yes,0,N/A,Ashish Chandpa,
+November,FLTB,Flutterflow UI Changes,11/8/2024,11/9/2024,11/9/2024,Yes,0,N/A,Ashish Chandpa,
+November,FLTB,Other Directors entire feature,10/28/2024,11/8/2024,11/8/2024,Yes,0,N/A,Sagar Nakum,
+November,FLTB,[AC-3559] Improve accounton-side functionality for receiving files from minfin sync Testing,11/22/2024,11/22/2024,11/22/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+November,FLTB,[AC-3545] Add strict query moongose option,11/21/2024,11/22/2024,11/22/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+November,FLTB,[AC-3533] Minfin citizen document not downloading some times,11/11/2024,11/22/2024,11/22/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+November,FLTB,[AC-3534] Handle excel import cases for new responsible fields,11/11/2024,11/12/2024,11/12/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3535] AOS Feedback | 11. Update of customer details,11/12/2024,11/13/2024,11/13/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3525] Change email address of Kamigo accounts,11/13/2024,11/13/2024,11/13/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3536] AOS Feedback | 12. Private persons: Status of PIT,11/14/2024,11/15/2024,11/15/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3580] Pass failed test cases in v2,11/15/2024,11/18/2024,11/18/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3586] Linked relation pagination api issue,11/18/2024,11/19/2024,11/19/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3578] Support translating email template names in PTI & settings tab,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3589] Kamigo - AOS - PIT bug,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,Support Responsible field for Company type,11/21/2024,11/22/2024,11/22/2024,Yes,0,N/A,Ronak Jagani,N/A
+November,FLTB,[AC-3481] AMLCare - Other Directors,10/29/2024,11/20/2024,11/20/2024,Yes,0,N/A,"Dhruva Pambhar , Sagar Nakum",N/A
+November,FLTB,[AC-3553] CCF: Language of prefill of CustomerType,11/13/2024,11/14/2024,11/14/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+November,FLTB,Calculation Data export in excel,11/13/2024,11/18/2024,11/18/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+November,FLTB,[AC-3588] AMLCare: bug of compliant filter,11/20/2024,11/25/2024,11/25/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+November,FLTB,[AC-3582] CCF: Not able to edit or remove tasks on the to do list,11/15/2024,11/22/2024,11/22/2024,Yes,0,N/A,Arjun Parmar,N/A
+November,FLTB,[AC-3585] CCF: Xerius integration,11/18/2024,11/22/2024,11/22/2024,Yes,0,N/A,Arjun Parmar,N/A
+November,FLTB,[AC-3593] Changes in minfin documents count in Myminfin customer detail screen,11/21/2024,11/22/2024,11/22/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+November,FLTB,[AC-3555] Team-App related changes for individual company sync,11/12/2014,11/22/2024,11/22/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+November,FLTB,[AC-3596] CCF-xerius integration- Evaluation function changes in v1,11/22/2024,11/22/2024,11/22/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+November,FLTB,[AC-3550]-optimise statistics analytics query,11/12/2014,11/22/2024,11/22/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+November,FLTB,AOS bulk communication: status is on two rows,11/12/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,AOS Feedback 11: Update of customer details,11/12/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,"[AC-2961] Use aos create/edit v2 customer component in pit module, PR Review and testing",11/22/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,AOS Feedback 12: Private persons: Status of PIT,11/14/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,AOS communication: align design of status,11/18/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,AOS Feedback 13. Date notation => Belgian,11/18/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,[AC-3592] AOS and CCF: add label of user when creating a customer,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,[AC-3494] AOS: Communications => Emails,11/15/2024,11/22/2024,11/22/2024,Yes,0,N/A,Megha Rana,N/A
+November,FLTB,AI-Prefill: new processor and versions,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Ashish Chandpa,N/A
+November,FLTB,[AC-3563] Move Quiz transcript into transcript with migration and testing,11/13/2024,11/22/2024,11/22/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,[AC-3564] Integration all contract related routes with Frontend team,11/13/2024,11/22/2024,11/22/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,issue in minfin update customer details,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,Optimize statistics query,11/11/2024,11/12/2024,11/12/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,GBAN,Production push (18/11/2024) (Dynamic column selection + UV image store),11/1/2024,11/18/2024,11/18/2024,Yes,0,N/A,"Rutvik Pesivadiya, Nisarg Upadhyay",N/A
+November,GBAN,Timezone need to attached in property wise,11/11/2024,11/22/2024,11/21/2024,Yes,-1,N/A,"Rutvik Pesivadiya, Nisarg Upadhyay",N/A
+November,KINS,Instagram Crawler acting out,11/18/2024,11/18/2024,11/18/2024,Yes,0,N/A,"Naitri Doshi, Jay Dhakan",N/A
+November,KINS,Tiktok Crawler acting out,10/31/2024,11/4/2024,11/4/2024,Yes,0,N/A,"Naitri Doshi, Jay Dhakan",N/A
+November,KIND,Meltwater external player search based playout,11/1/2024,11/11/2024,11/15/2024,Yes,-4,N/A,Achyut Manvar,N/A
+November,KIND,Meltwater external player clipping,11/4/2024,11/15/2024,11/15/2024,Yes,0,N/A,Hetvi Doshi,N/A
+November,SHPY,"Product page title , price , currency updation",11/8/2024,11/8/2024,11/8/2024,Yes,0,N/A,Darshan Sidhhpara,
+November,SHPY,Mega Menu created,11/11/2024,11/12/2024,11/12/2024,Yes,0,N/A,Sagar Chavda,
+November,SHPY,Added icons on the product page,11/19/2024,11/19/2024,11/19/2024,Yes,0,N/A,Srujan Rajpura,
+November,Madeira,Analyitcs Addition,11/18/2024,11/29/2024,11/28/2024,Yes,0,N/A,"Ashish Chandpa, Riya Sata",N/A
+November,SHPY,2 Section creation on product page from reference site,11/18/2024,11/18/2024,11/18/2024,Yes,0,N/A,Sagar Chavda,
+November,SHPY,landing page created,11/19/2024,11/25/2024,11/25/2024,Yes,0,N/A,Srujan Rajpura,
+November,SHPY,landing page created,11/19/2024,11/25/2024,11/25/2024,Yes,0,N/A,Sagar Chavda,
+November,QP,Table Status Availability ,10/21/2024,10/31/2024,10/31/2024,Yes,0,N/A,"Hetvee Shah, Siddharth Kanjaria, Chirag Sanghvi",N/A
+November,QP,Change DB to MySQL,11/5/2024,11/7/2024,11/7/2024,Yes,0,N/A,"Hetvee Shah, Siddharth Kanjaria",N/A
+November,QP,Status Log File Download,11/18/2024,11/21/2024,11/18/2024,Yes,0,N/A,"Hetvee Shah, Siddharth Kanjaria",N/A
+November,SEOG,LLM activity data logging,11/11/2024,11/14/2024,11/14/2024,Yes,0,N/A,"Khushi Sanghrajka, Dharmik Rathod",N/A
+November,SEOG,Admin-Panel,10/18/2024,11/8/2024,11/6/2024,Yes,-2,N/A,"Seo-Genie Team (Dharmik Rathod, Dharmit Lakhani, Darshit Mehta)",N/A
+November,SYNC,https://digitial-product-engineering.atlassian.net/browse/CHZU-4670,11/18/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Parth Mansata, Dev Bhayani",N/A
+November,SYNC,https://digitial-product-engineering.atlassian.net/browse/CHZU-4705,11/13/2024,11/15/2024,11/15/2024,Yes,0,N/A,"Parth Mansata, Dev Bhayani",N/A
+November,SYNC,https://digitial-product-engineering.atlassian.net/browse/CHZU-4618,11/1/2024,11/5/2024,11/5/2024,Yes,0,N/A,"Parth Mansata, Dev Bhayani",N/A
+November,SYNC,https://digitial-product-engineering.atlassian.net/jira/software/c/projects/CHZU/boards/725?assignee=622b165b932f0f00716bc4fd&selectedIssue=CHZU-4745,11/27/2024,11/29/2024,11/29/2024,Yes,0,N/A,"Parth Mansata, Dev Bhayani",
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1530,11/7/2024,11/8/2024,11/7/2024,Yes,-1,N/A,"Yuvraj Kanakiya, Manish Andodariya",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1540,11/12/2024,11/12/2024,11/12/2024,Yes,0,N/A,"Yuvraj Kanakiya, Manish Andodariya",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1527,11/7/2024,11/20/2024,11/14/2024,Yes,-6,N/A,"Gungun Udhani, Manish Andodariya ",Was dependent on Swapnil's UI code
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1515,11/14/2024,11/14/2024,11/14/2024,Yes,0,N/A,"Yuvraj Kanakiya, Manish Andodariya",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1528,11/13/2024,11/20/2024,11/19/2024,Yes,-1,N/A,"Yuvraj Kanakiya, Manish Andodariya",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1529,11/14/2024,11/20/2024,11/20/2024,Yes,0,N/A,"Gungun Udhani, Manish Andodariya ",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1529,11/25/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Gungun Udhani, Manish Andodariya ",N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1547,11/21/2024,12/4/2024,11/25/2024,Yes,-9,N/A,"Yuvraj Kanakiya, Manish Andodariya",Display image acquire date as image name
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1548,11/25/2024,12/4/2024,11/27/2024,Yes,-7,N/A,"Yuvraj Kanakiya, Manish Andodariya","When user edit zone, only selected images will store in database"
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1568,11/28/2024,11/28/2024,11/28/2024,Yes,0,N/A,"Yuvraj Kanakiya, Manish Andodariya",N/A
+November,SYNP,https://github.com/syngenta-digital/web-react-planting-plan/pull/844,11/21/2024,11/21/2024,11/21/2024,Yes,0,N/A,Manish Andodariya,N/A
+November,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1472,11/27/2024,12/4/2024,12/2/2024,Yes,-2,N/A,Gungun Udhani,N/A
+November,TRAD,Public Application Form ,11/8/2024,11/15/2024,11/15/2024,Yes,0,N/A,"TRAD Team (Siddharth Kanjaria, Manish Andodariya,Misri Pandya)",N/A
+November,SHPY,"Added new 3 product, each with 2 variants made 2 live",11/20/2024,11/20/2024,11/20/2024,Yes,0,N/A,Srujan Rajpura,
+November,VRSN,Scrape DNS Setup Information,10/28/2024,11/7/2024,11/7/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Create Customer Support Agent,11/8/2024,11/15/2024,11/15/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Change Approve to Copy,11/18/2024,11/19/2024,11/19/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Add Delete Button,11/26/2024,11/26/2024,11/29/2024,Yes,-3,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Investigate Errors And Create Tasks,11/19/2024,11/20/2024,11/20/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Fix OpenAI related Errors,11/20/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Fix Tool and Stripe Related Errors,11/21/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Fix GCP Related Errors,11/21/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,VRSN,Identify and Solve Generic Errors,11/22/2024,11/25/2024,11/25/2024,Yes,0,N/A,"Niket Bhadeshiya, Jay Dhakan",N/A
+November,FLTB,[AC-3556] Migrate contract route to v2,11/14/2024,11/22/2024,11/22/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3583] CCF: translation key of statuses missing,11/20/2024,11/20/2024,11/20/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3581] CCF: not able to change process type in editor,11/15/2024,11/15/2024,11/15/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3551] CCF: redirect after creating a customer,11/13/2024,11/15/2024,11/15/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3575] CCF : FE Snippet not working,11/15/2024,11/18/2024,11/18/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3557] Migrate contract-group route to v2,11/19/2024,11/22/2024,11/22/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3558] Migrate contract-step route to v2,11/20/2024,11/22/2024,11/22/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+November,FLTB,[AC-3635] API-tool route,11/25/2024,12/6/2024,12/6/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,Contract-bot V2 builder testing,11/25/2024,12/6/2024,12/6/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,[AC-3634] It'sme route,11/25/2024,12/6/2024,12/6/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,mongoose strict query issue,11/25/2024,11/26/2024,12/6/2024,Yes,0,N/A,Vishal Parmar,N/A
+November,FLTB,External Source import: real estate import issue,11/25/2024,11/29/2024,12/6/2024,Yes,0,N/A,Vishal Parmar,"This one is a production issue, and this bug was assigned to another person. After a few days, this bug was not resolved and assigned to me."
+,,,,,,,,,,
+December,SHPY,Wolfpack Service website,12/3/2024,12/6/2024,12/6/2024,Yes,0,-,Srujan Rajapara,-
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1583,12/2/2024,12/4/2024,12/2/2024,Yes,-2,N/A,Yuvraj Kanakiya,Tag dropdown added in edit screen
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1591,11/22/2024,12/4/2024,12/4/2024,Yes,0,N/A,Gungun Udhani,N/A
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1580,12/5/2024,12/17/2024,12/10/2024,Yes,-7,N/A,"Gungun Udhani, Yuvraj Kanakiya",N/A
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1579,12/6/2024,12/17/2024,12/6/2024,Yes,-11,N/A,Yuvraj Kanakiya,N/A
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1581,12/6/2024,12/17/2024,12/11/2024,Yes,-6,N/A,"Gungun Udhani,Manish Andodariya",N/A
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1584,12/11/2024,12/17/2024,12/11/2024,Yes,-6,N/A,Gungun Udhani,N/A
+December,SYNP,https://digitial-product-engineering.atlassian.net/browse/CWPT-1581,12/12/2024,12/17/2024,12/12/2024,Yes,-5,N/A,Manish Andodariya,N/A
+December,KIND,Archive Callback Service,12/2/2024,12/9/2024,12/9/2024,YEs,0,N/A,Achyut Manvar,N/A
+December,FLTB,[KM-360] BE - Endpoint to return company invite status,12/2/2024,12/3/2024,12/3/2024,Yes,0,N/A,Ronak Jagani,N/A
+December,FLTB,[KM-261] BE - Endpoint to resend company invite,12/3/2024,12/5/2024,12/5/2024,Yes,0,N/A,Ronak Jagani,N/A
+December,FLTB,[AC-3640] Batch-details pagination issue & update transcripts issue,11/26/2024,11/27/2024,11/27/2024,Yes,0,N/A,Ronak Jagani,N/A
+December,FLTB,[AC-3642] Add communication panel to company customer detail page,12/4/2024,12/4/2024,12/4/2024,Yes,0,N/A,Ronak Jagani,N/A
+December,FLTB,[AC-3641] Accounton user can send company onboarding invite to Kamigo user,12/4/2024,12/5/2024,12/5/2024,Yes,0,N/A,Ronak Jagani,N/A
+December,FLTB,[AC-3606] Legal-topic Routes,11/29/2024,12/2/2024,12/6/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+December,FLTB,[AC-3608] Customer-platform Routes,11/27/2024,11/28/2024,12/6/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+December,FLTB,[AC-3605] Task Routes,11/25/2024,11/27/2024,12/6/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+December,FLTB,[AC-3607] law-firm-configuration Routes,11/28/2024,11/28/2024,12/6/2024,Yes,0,N/A,Devansh Kaneriya,N/A
+December,FLTB,[AC-3622]: Get the list of questionnaires with pagination + sorting + filtering,11/25/2024,11/27/2024,11/27/2024,Yes,0,N/A,Rutvik Pesivadiya,N/A
+December,FLTB,[AC-3644]: TA for the Run cypress tests in CI for development and staging,12/2/2024,12/5/2024,12/4/2024,Yes,0,N/A,Rutvik Pesivadiya,N/A
+December,,,,,,,,,,
+December,FLTB,[AC-3611] Optimisation for AzureSSO component in AMLCare and Accounton,11/25/2024,11/26/2024,11/26/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,"[AC-3612] API Step add & delete issue , Group-step name display in alert dialog while delete fix",11/26/2024,11/26/2024,11/26/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,[AC-3613] Use V2 builder for quiz builder - Breakdown strategy,11/27/2024,12/3/2024,12/3/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,[AC-3647] AMLCare date validation in questionnaire,11/28/2024,11/28/2024,11/28/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,[AC-3653] AMLCare: 'Customer' does not redirect to customer overview,12/2/2024,12/2/2024,12/2/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,[AC-3372] Mandatory upload and status of loop,12/3/2024,12/3/2024,12/3/2024,Yes,0,N/A,Dhruva Pambhar,N/A
+December,FLTB,,,,,,,,,
+December,FLTB,[AC-3526] AOS bulk communication: prevent double recipients,11/25/2024,12/2/2024,12/2/2024,Yes,0,N/A,Megha Rana,N/A
+December,FLTB,[AC-3579] AOS Feedback | 4. FE - Support translating email template names in PTI -> communication & settings tab,11/28/2024,12/2/2024,12/2/2024,Yes,0,N/A,Megha Rana,N/A
+December,FLTB,[AC-3560] FE - Add communication panel to company customer detail page,12/3/2024,12/4/2024,12/4/2024,Yes,0,N/A,Megha Rana,N/A
+December,FLTB,[AC-3626] KBO Route,11/3/2024,12/6/2024,12/6/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+December,FLTB,[AC-3627] History module,11/3/2024,12/6/2024,12/6/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+December,FLTB,[AC-3631] Process-step module,11/5/2024,12/6/2024,12/6/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+December,FLTB,[AC-3630] Process-variable,12/4/2024,12/6/2024,12/6/2024,Yes,0,N/A,Sagar Dhanwani,N/A
+December,FLTB,[AC-3602]External Source import: not able to map loans on real estate,11/26/2024,11/29/2024,12/6/2024,No,5,Due to cloud flare request timeout we have to change structure for extract Loan data and client aggreed for new approach,Sagar Dhanwani,RCA document link https://app.clickup.com/3409307/v/dc/381cv-5484/381cv-277976
+December,FLTB,[AC-3610] - Contract-bot-v2 : v1 to v2 Refactor,11/25/2024,12/6/2024,12/6/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+December,FLTB,[AC-3625]-Webhooks routes refactoring,12/4/2024,12/6/2024,12/6/2024,Yes,0,N/A,Nidhi Kathrotiya,N/A
+December,FLTB,[AC-3645] Not able to download proposal PDF of a simulation,11/27/2024,11/27/2024,11/27/2024,Yes,0,N/A,Arjun  Parmar,N/A
+December,AIGP,Analyitcs Addition,12/1/2024,12/19/2024,12/19/2024,Yes,0,N/A,"Ashish Chandpa, Riya Sata",N/A
+December,AIGP.Pt,Features: FAQ & Train ID & Location,12/9/2024,12/10/2024,12/10/2024,Yes,0,N/A,Ashish Chandpa,
+December,AIGP,Features: FAQ & Train ID & Location + Plan a trip,12/11/2024,12/13/2024,12/13/2024,Yes,0,N/A,"Ashish Chandpa, Riya Sata",
+December,AIGP.Pt,Feature: Plan a trip,12/16/2024,12/16/2024,12/16/2024,Yes,0,N/A,Ashish Chandpa,
+December,AIGP.Pt,Feature: Find stop with names + reach station from current location,12/17/2024,12/18/2024,12/18/2024,Yes,0,N/A,Riya Sata,
