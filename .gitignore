@@ -1,3 +1,8 @@
 node_modules/*
 package-lock.json
 .idea
+
+clickup-user-data/*
+!clickup-user-data/user-attendance.csv
+!clickup-user-data/user-metadata.json
+.env
