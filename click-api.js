@@ -1,5 +1,7 @@
 const axios = require('axios');
 const fs = require('fs');
+const {configDotenv} = require("dotenv");
+configDotenv()
 const {parseCsvFile} = require("./helpers/csv-parser");
 
 const EFFICIENCY = 0.75;
