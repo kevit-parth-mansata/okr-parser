@@ -106,6 +106,22 @@ async function fetchData() {
         null
       );
 
+      const finalDescriptionPercentage =
+        descriptionPercentage >= 80
+          ? 6.25
+          : (descriptionPercentage * 6.25) / 100;
+
+      const finalStoryPercentage =
+        pointsPercentage >= 50 ? 6.25 : (pointsPercentage * 6.25) / 100;
+
+      const finalTimeTrackPercentage =
+        timeTrackedPercentage >= 100
+          ? 6.25
+          : (timeTrackedPercentage * 6.25) / 100;
+
+      const finalDueDatePercentage =
+        dueDatePercentage >= 80 ? 6.25 : (dueDatePercentage * 6.25) / 100;
+
       const emailPrefix = user.userName.split(" ").join(".");
       userTaskData.timeTrackedInHrs = parseFloat(
         (userTaskData.timeTrackedInMs / (1000 * 60 * 60)).toFixed(2)
@@ -116,16 +132,24 @@ async function fetchData() {
         (userTaskData.timeTrackedInHrs / userTaskData.totalWorkingHours) *
         EFFICIENCY *
         100;
-      userTaskData.efficiencyPercentage = efficiency > 100 ? 100 : efficiency;
+      userTaskData.efficiencyPercentage = efficiency > 100 ? 75 : efficiency;
+
+      const finalPer =
+        finalDescriptionPercentage +
+        finalStoryPercentage +
+        finalTimeTrackPercentage +
+        finalDueDatePercentage +
+        userTaskData.efficiencyPercentage;
       delete user._id;
       userOutputData.push({
         ...user,
         ...userAttendanceMap[emailPrefix],
         ...userTaskData,
-        description: descriptionPercentage,
-        story_points: pointsPercentage,
-        timeTracked: timeTrackedPercentage,
-        dueDate: dueDatePercentage,
+        description: finalDescriptionPercentage,
+        story_points: finalStoryPercentage,
+        timeTracked: finalTimeTrackPercentage,
+        dueDate: finalDueDatePercentage,
+        persentage: finalPer,
       });
     } catch (error) {
       console.error(`Error fetching data for user :`, error.message);
