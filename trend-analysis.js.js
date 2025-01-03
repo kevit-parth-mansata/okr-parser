@@ -2,7 +2,7 @@ const axios = require("axios");
 const fs = require("fs");
 const { configDotenv } = require("dotenv");
 configDotenv();
-const { parseCsvFile, writeJsonToCsv} = require("./helpers/csv-parser");
+const { parseCsvFile, writeJsonToCsv, writeJsonToFile} = require("./helpers/csv-parser");
 
 const EFFICIENCY = 0.75;
 // Replace with your API endpoint
@@ -46,8 +46,6 @@ async function fetchData() {
           };
 
           const { data } = await axios(config);
-          // console.log(data)
-          // Store the response data
           userTasks.push(...data.tasks);
           lastPage = data.last_page;
           count++;
@@ -163,7 +161,7 @@ async function fetchData() {
 }
 
 // Execute the function
-fetchData();
+// fetchData();
 
 const sleep = async () => {
   return new Promise((resolve, reject) => {
@@ -172,3 +170,176 @@ const sleep = async () => {
     }, 1000);
   });
 };
+
+const getAllTasks = async () => {
+  const allTasks = [];
+  try {
+
+    const monthGaps = [{
+      startDate: new Date('2024-04-01'),
+    }, {
+      startDate: new Date('2024-05-01'),
+    }, {
+      startDate: new Date('2024-06-01'),
+    }, {
+      startDate: new Date('2024-07-01'),
+    }, {
+      startDate: new Date('2024-08-01'),
+    }, {
+      startDate: new Date('2024-09-01'),
+    }, {
+      startDate: new Date('2024-10-01'),
+    }, {
+      startDate: new Date('2024-11-01'),
+    }, {
+      startDate: new Date('2024-12-01'),
+    }, {
+      startDate: new Date('2025-01-01'),
+    }]
+    for(const [index, gap] of monthGaps.entries()) {
+      if(monthGaps.length - 1 === index) {
+        continue;
+      }
+      console.log("Getting Data", gap.startDate,  new Date());
+      let lastPage = false;
+      let count = 0;
+      const startDate = (new Date(gap.startDate)).getTime()
+      const endDate = (new Date(monthGaps[index + 1].startDate)).getTime()
+      while (!lastPage) {
+        try {
+          console.log(`Making API call: ${count}`, new Date());
+          var config = {
+            method: "get",
+            url: `https://api.clickup.com/api/v2/team/3409307/task?include_closed=true&date_created_gt=${startDate}&date_created_lt=${endDate}&page=${count}`,
+            headers: {
+              Authorization: process.env.CLICKUP_ACCESS_TOKEN,
+              accept: "application/json",
+            },
+          };
+          const {data} = await axios(config);
+          allTasks.push(...data.tasks);
+          lastPage = data.last_page;
+          count++;
+        } catch (error) {
+          console.error(`Error fetching data for page:`, error.message);
+          userTasks.push({error: error.message});
+        }
+      }
+      await sleep();
+    }
+    fs.writeFileSync(
+      `all-user-tasks.json`,
+      JSON.stringify(allTasks, null, 2)
+    );
+  } catch (error) {
+    console.error(`Error fetching data for page:`, error.message);
+    allTasks.push({error: error.message});
+  }
+};
+// getAllTasks()
+
+const prepareData = async () => {
+  try {
+    const allKevitTasks = JSON.parse(
+      fs.readFileSync("all-user-tasks.json")
+    );
+    // console.log(allKevitTasks.length)
+    // console.log(allKevitTasks[0])
+    let allTasks = filterTasksByUsers(allKevitTasks);
+
+    allTasks = allTasks.map(t => {
+      const createdAt = new Date(Number(t.date_created))
+      t.taskMonth = createdAt.getMonth() + 1
+      t.taskDate = createdAt.getDate()
+      return t;
+    })
+    console.log(allTasks.length)
+    console.log(allTasks[0])
+
+    const months = [4,5,6,7,8,9,10,11,12];
+    const monthTimeData = {}
+    months.forEach(m => {
+      const monthTasks = allTasks.filter(t => t.taskMonth === m);
+      const timeTrackedInMs = monthTasks.reduce(
+        (prev, next) => {
+          if (next.time_spent) {
+            prev += next.time_spent;
+          }
+          return prev;
+        },
+        0
+      );
+      const timeTrackedInHrs = timeTrackedInMs/ (1000 * 60 * 60)
+      const userDaySpecificAverage = timeTrackedInHrs / (52 * 20);
+      monthTimeData[m] = {
+        taskCount: monthTasks.length,
+        totalTimeTrackedHrs: timeTrackedInHrs,
+        userDaySpecificAverage
+      }
+    })
+    const flatMonthData = Object.entries(monthTimeData).map(([month, metrics]) => ({
+      Month: parseInt(month),
+      TaskCount: metrics.taskCount,
+      TotalTimeTrackedHrs: metrics.totalTimeTrackedHrs,
+      UserDaySpecificAverage: metrics.userDaySpecificAverage
+    }));
+    writeJsonToFile(flatMonthData, 'graph-2-month-wise-avg.json')
+    await writeJsonToCsv(flatMonthData, 'graph-2-month-wise-avg.csv')
+
+    const monthProjectData = {}
+    months.forEach(month => {
+      const monthTasks = allTasks.filter(task => task.taskMonth === month);
+
+      monthTasks.forEach(task => {
+        const folderName = task.folder.name; // Project/Folder Name
+        const timeTracked = task.time_spent || 0; // Time spent in ms
+
+        if (!monthProjectData[folderName]) {
+          monthProjectData[folderName] = {};
+        }
+
+        if (!monthProjectData[folderName][month]) {
+          monthProjectData[folderName][month] = 0;
+        }
+
+        monthProjectData[folderName][month] += timeTracked / (1000 * 60 * 60); // Convert ms to hours
+      });
+    });
+
+// Convert to JSON for CSV export
+    const jsonData = [];
+
+// Iterate over months to structure the data
+    months.forEach(month => {
+      const row = { Month: month };
+
+      // Add time tracked for each folder (project)
+      Object.keys(monthProjectData).forEach(folder => {
+        row[folder] = monthProjectData[folder][month] || 0; // Default to 0 if no data
+      });
+
+      jsonData.push(row);
+    });
+
+// Log the JSON for debugging
+    console.log(jsonData);
+    writeJsonToFile(jsonData, 'graph-3-project-wise-avg.json')
+    await writeJsonToCsv(jsonData, 'graph-3-project-wise-avg.csv')
+
+  } catch (error) {
+    console.error(`Error fetching data for page:`, error.message);
+  }
+}
+
+const filterTasksByUsers = (tasks) => {
+  // Extract ClickUp IDs of users
+  const userClickUpIds = users.map(user => user.clickUpId);
+
+  // Filter tasks where any assignee's id matches the user IDs
+  const filteredTasks = tasks.filter(task =>
+    task.assignees.some(assignee => userClickUpIds.includes(assignee.id.toString()))
+  );
+
+  return filteredTasks;
+};
+prepareData()
